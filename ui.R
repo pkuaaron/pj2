@@ -1,5 +1,9 @@
 library(ggplot2)
 
+
+dataurl="http://www.statsci.org/data/oz/ctsibuni.txt"
+ctsib=read.table("http://www.statsci.org/data/oz/ctsibuni.txt",sep="\t",header=TRUE)
+
 shinyUI(navbarPage("Project 2 - Min Chen",
                    tabPanel("Introduction",
                             mainPanel(
