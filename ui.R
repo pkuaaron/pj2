@@ -225,9 +225,7 @@ tabPanel("Analysis with unsupervised learning",
                  checkboxInput("plotCircle", "Show the circle", value = TRUE),
                  
                  helpText("Based on the WIKI page for PCA, in order to maximize variance, the first weight vector  thus has to satisfy"),
-                 withMathJax(helpText("$$\\LARGE w_{(1)}=\\arg\\max_{||{w}||=1}\\{\\sum_i{(t_i)_{(i)}^2}\\}=\\arg
-                                      
-                                      max_{||{w}||=1}\\{\\sum_i{(x_{(i)}*w)^2}\\}$$")),
+                 withMathJax(helpText("$$\\LARGE w_{(1)}=\\arg\\max_{||{w}||=1}\\{\\sum_i{(t_i)_{(i)}^2}\\}=\\arg\\max_{||{w}||=1}\\{\\sum_i{(x_{(i)}*w)^2}\\}$$")),
                  withMathJax(helpText("Since \\(\\LARGE w_{(1)}\\) has been defined to be a unit vector, it equivalently also satisfies")),
                  withMathJax(helpText("$$\\LARGE w_{(1)}=\\arg\\max_{\\left||{w}\\right||=1}{\\{\\frac{w^TX^TXw}{w^Tw}}\\}$$")),
                  helpText("Further components can be defined by following formula"),
