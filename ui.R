@@ -239,7 +239,7 @@ tabPanel("Analysis with unsupervised learning",
                  tabsetPanel(
                      tabPanel("Component Plot",plotOutput("componentplot",height = 280*2, width = 250*2)),
                      tabPanel("Scree Plot",plotOutput("screeplot", height = "300px")),
-                     tabPanel("Data",tableOutput("filetable"))
+                     tabPanel("Data sample",tableOutput("filetable"))
                  )
                  
              )
